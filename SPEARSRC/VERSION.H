@@ -1,4 +1,4 @@
-//#define SPEAR
+#define SPEAR
 //#define JAPAN
 //#define SPANISH
 #define GOODTIMES
