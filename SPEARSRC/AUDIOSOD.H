@@ -1,26 +1,26 @@
 /////////////////////////////////////////////////
 //
-// MUSE Header for .WL6
-// Created Tue Jul 14 15:04:53 1992
+// MUSE Header for .SOD
+// Created Thu Aug 13 09:25:58 1992
 //
 /////////////////////////////////////////////////
 
-#define NUMSOUNDS		87
-#define NUMSNDCHUNKS		288
+#define NUMSOUNDS		81
+#define NUMSNDCHUNKS		267
 
 //
 // Sound names & indexes
 //
 typedef enum {
 		HITWALLSND,              // 0
-		SELECTWPNSND,            // 1
+		MISSILEHITSND,           // 1
 		SELECTITEMSND,           // 2
-		HEARTBEATSND,            // 3
+		GHOSTSIGHTSND,           // 3
 		MOVEGUN2SND,             // 4
 		MOVEGUN1SND,             // 5
 		NOWAYSND,                // 6
 		NAZIHITPLAYERSND,        // 7
-		SCHABBSTHROWSND,         // 8
+		MISSILEFIRESND,          // 8
 		PLAYERDEATHSND,          // 9
 		DOGDEATHSND,             // 10
 		ATKGATLINGSND,           // 11
@@ -62,43 +62,37 @@ typedef enum {
 		NOBONUSSND,              // 47
 		PERCENT100SND,           // 48
 		BOSSACTIVESND,           // 49
-		MUTTISND,                // 50
+		DEATHSCREAM4SND,         // 50
 		SCHUTZADSND,             // 51
 		AHHHGSND,                // 52
-		DIESND,                  // 53
-		EVASND,                  // 54
-		GUTENTAGSND,             // 55
+		DEATHSCREAM5SND,         // 53
+		DEATHSCREAM7SND,         // 54
+		DEATHSCREAM8SND,         // 55
 		LEBENSND,                // 56
-		SCHEISTSND,              // 57
+		DEATHSCREAM6SND,         // 57
 		NAZIFIRESND,             // 58
 		BOSSFIRESND,             // 59
 		SSFIRESND,               // 60
 		SLURPIESND,              // 61
-		TOT_HUNDSND,             // 62
-		MEINGOTTSND,             // 63
-		SCHABBSHASND,            // 64
-		HITLERHASND,             // 65
+		GHOSTFADESND,            // 62
+		DEATHSCREAM9SND,         // 63
+		GETAMMOBOXSND,           // 64
+		ANGELSIGHTSND,           // 65
 		SPIONSND,                // 66
 		NEINSOVASSND,            // 67
 		DOGATTACKSND,            // 68
-		FLAMETHROWERSND,         // 69
-		MECHSTEPSND,             // 70
-		GOOBSSND,                // 71
-		YEAHSND,                 // 72
-		DEATHSCREAM4SND,         // 73
-		DEATHSCREAM5SND,         // 74
-		DEATHSCREAM6SND,         // 75
-		DEATHSCREAM7SND,         // 76
-		DEATHSCREAM8SND,         // 77
-		DEATHSCREAM9SND,         // 78
-		DONNERSND,               // 79
-		EINESND,                 // 80
-		ERLAUBENSND,             // 81
-		KEINSND,                 // 82
-		MEINSND,                 // 83
-		ROSESND,                 // 84
-		MISSILEFIRESND,          // 85
-		MISSILEHITSND,           // 86
+		ANGELFIRESND,            // 69
+		TRANSSIGHTSND,           // 70
+		TRANSDEATHSND,           // 71
+		WILHELMSIGHTSND,         // 72
+		WILHELMDEATHSND,         // 73
+		UBERDEATHSND,            // 74
+		KNIGHTSIGHTSND,          // 75
+		KNIGHTDEATHSND,          // 76
+		ANGELDEATHSND,           // 77
+		KNIGHTMISSILESND,        // 78
+		GETSPEARSND,             // 79
+		ANGELTIREDSND,           // 80
 		LASTSOUND
 	     } soundnames;
 
@@ -106,41 +100,38 @@ typedef enum {
 // Base offsets
 //
 #define STARTPCSOUNDS		0
-#define STARTADLIBSOUNDS	87
-#define STARTDIGISOUNDS		174
-#define STARTMUSIC		261
+#define STARTADLIBSOUNDS	81
+#define STARTDIGISOUNDS		162
+#define STARTMUSIC		243
 
 //
 // Music names & indexes
 //
 typedef enum {
-		CORNER_MUS,              // 0
+		XFUNKIE_MUS,             // 0
 		DUNGEON_MUS,             // 1
-		WARMARCH_MUS,            // 2
+		XDEATH_MUS,              // 2
 		GETTHEM_MUS,             // 3
-		HEADACHE_MUS,            // 4
-		HITLWLTZ_MUS,            // 5
-		INTROCW3_MUS,            // 6
-		NAZI_NOR_MUS,            // 7
+		XTIPTOE_MUS,             // 4
+		GOINGAFT_MUS,            // 5
+		URAHERO_MUS,             // 6
+		XTHEEND_MUS,             // 7
 		NAZI_OMI_MUS,            // 8
 		POW_MUS,                 // 9
-		SALUTE_MUS,              // 10
+		TWELFTH_MUS,             // 10
 		SEARCHN_MUS,             // 11
 		SUSPENSE_MUS,            // 12
-		VICTORS_MUS,             // 13
+		ZEROHOUR_MUS,            // 13
 		WONDERIN_MUS,            // 14
-		FUNKYOU_MUS,             // 15
+		ULTIMATE_MUS,            // 15
 		ENDLEVEL_MUS,            // 16
-		GOINGAFT_MUS,            // 17
-		PREGNANT_MUS,            // 18
-		ULTIMATE_MUS,            // 19
-		NAZI_RAP_MUS,            // 20
-		ZEROHOUR_MUS,            // 21
-		TWELFTH_MUS,             // 22
-		ROSTER_MUS,              // 23
-		URAHERO_MUS,             // 24
-		VICMARCH_MUS,            // 25
-		PACMAN_MUS,              // 26
+		XEVIL_MUS,               // 17
+		XJAZNAZI_MUS,            // 18
+		COPYPRO_MUS,             // 19
+		XAWARD_MUS,              // 20
+		XPUTIT_MUS,              // 21
+		XGETYOU_MUS,             // 22
+		XTOWER2_MUS,             // 23
 		LASTMUSIC
 	     } musicnames;
 
