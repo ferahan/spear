@@ -2088,7 +2088,7 @@ void CustomControls(void)
 //
 void DefineMouseBtns(void)
 {
- CustomCtrls mouseallowed={0,1,1,1};
+ CustomCtrls mouseallowed={0,1,1,0};
  EnterCtrlData(2,&mouseallowed,DrawCustMouse,PrintCustMouse,MOUSE);
 }
 
@@ -2110,7 +2110,7 @@ void DefineJoyBtns(void)
 //
 void DefineKeyBtns(void)
 {
- CustomCtrls keyallowed={1,1,1,1};
+ CustomCtrls keyallowed={1,1,1,0};
  EnterCtrlData(8,&keyallowed,DrawCustKeybd,PrintCustKeybd,KEYBOARDBTNS);
 }
 
